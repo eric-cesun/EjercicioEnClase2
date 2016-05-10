@@ -38,13 +38,12 @@ public class MultiplicacionAleatoria {
     }
     public static void Realizar(){
           Scanner leer =new Scanner(in);
-         MultiplicacionAleatoria numerosos= new MultiplicacionAleatoria();
-         out.println(numerosos.multiplicacion());
+         out.println(multiplicacion());
         for (int i = 0; i < 5; i++) {
                 out.println("da el numero");
                 int resultado=leer.nextInt();
-                numerosos= new MultiplicacionAleatoria(resultado);
-                boolean n=numerosos.resultadosT();
+               MultiplicacionAleatoria numerosos= new MultiplicacionAleatoria(resultado);
+                resultadosT();
                     if (n) {
                         out.println("asertaste");
                         break;

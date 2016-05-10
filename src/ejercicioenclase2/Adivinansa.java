@@ -37,11 +37,10 @@ public class Adivinansa {
     }
     public static void jugar(){
         Scanner leer =new Scanner(in);
-        Adivinansa adivina=new Adivinansa();
-        while(!adivina.adivinaste()){
+        while(!adivinaste()){
                 out.println("da el numero");
                 int Estoes=leer.nextInt();
-                out.println(adivina.advina(Estoes));
+                out.println(advina(Estoes));
                 }
     }
 }

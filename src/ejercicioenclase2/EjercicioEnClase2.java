@@ -23,7 +23,7 @@ public class EjercicioEnClase2 {
         out.println("Elije el programa");
         int opcion=leer.nextInt();
         switch(opcion){
-            case 1:
+            case 1: 
                 Dados x= new Dados();
                 out.println(x.R());
                 break;

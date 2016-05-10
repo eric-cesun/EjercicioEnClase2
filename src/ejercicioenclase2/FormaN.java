@@ -42,7 +42,7 @@ public class FormaN {
                 out.println("da el numero");
                 int NumeroForma=leer.nextInt();
                 FormaN forma=new FormaN(NumeroForma);
-                forma.forma();
-                forma.forma2();
+                forma();
+                forma2();
         }
 }
