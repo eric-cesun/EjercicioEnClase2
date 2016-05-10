@@ -5,9 +5,10 @@
  */
 package ejercicioenclase2;
 
-import java.util.Random;
 import static java.lang.System.in;
+import java.util.Random;
 import static java.lang.System.out;
+import java.util.Scanner;
 /**
  *
  * @author kirito205
@@ -33,5 +34,14 @@ public class Adivinansa {
     }
     public static boolean adivinaste(){
     return F;
+    }
+    public static void jugar(){
+        Scanner leer =new Scanner(in);
+        Adivinansa adivina=new Adivinansa();
+        while(!adivina.adivinaste()){
+                out.println("da el numero");
+                int Estoes=leer.nextInt();
+                out.println(adivina.advina(Estoes));
+                }
     }
 }

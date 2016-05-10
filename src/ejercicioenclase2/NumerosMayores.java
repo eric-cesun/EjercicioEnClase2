@@ -5,6 +5,10 @@
  */
 package ejercicioenclase2;
 
+import static java.lang.System.in;
+import static java.lang.System.out;
+import java.util.Scanner;
+
 /**
  *
  * @author kirito205
@@ -17,6 +21,7 @@ public class NumerosMayores {
     public static int numero1=0;
     public NumerosMayores(){}
     public NumerosMayores(int numeros){
+        
         if (numeros>20) {
             numero1=numeros;
             numeroSumado+=numeros;
@@ -28,5 +33,18 @@ public class NumerosMayores {
     }
     public static int suma(){
     return numeroSumado;
+    }
+    public static void realisar(){
+    Scanner leer =new Scanner(in);
+     int par=0;
+                while(par!=5){
+                    out.println("dame numeros");
+                    int numero=leer.nextInt();
+                    if(numero%2==0)
+                    {
+                    par++;
+                    }
+                    NumerosMayores y =new NumerosMayores(numero);                 
+                }
     }
 }

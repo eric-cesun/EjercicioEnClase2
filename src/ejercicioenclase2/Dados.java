@@ -4,22 +4,32 @@
  * and open the template in the editor.
  */
 package ejercicioenclase2;
-
+import static java.lang.System.in;
+import static java.lang.System.out;
+import java.util.Random;
+import java.util.Scanner;
 /**
  *
  * @author kirito205
  */
 public class Dados {
     public static String resultado="";
-    public Dados(int numero1,int numero2,int numero3){
-        if(numero1==6 && numero2==6 && numero3==6)
+    
+    public Dados(/*int numero1,int numero2,int numero3*/){
+        Random numero1= new Random();
+         int numero4=(int)(numero1.nextInt(6)+1);
+                Random numero2= new Random();
+                int numero5=(int)(numero2.nextInt(6)+1);;
+                Random numero3= new Random();
+                int numero6=(int)(numero3.nextInt(6)+1);
+        if(numero4==6 && numero5==6 && numero6==6)
         {
             resultado="exelente";
         }
-        if (numero1==6 && numero2==6 && numero3!=6 || numero1==6 && numero3==6 && numero2!=6 || numero2==6 && numero3==6 && numero1!=6) {
+        if (numero4==6 && numero5==6 && numero6!=6 || numero4==6 && numero5==6 && numero6!=6 || numero4==6 && numero5==6 && numero6!=6) {
             resultado="muy bien";
         }
-        if (numero1==6  && numero2!=6 && numero3!=6 || numero1!=6 && numero2==6 && numero3!=6||numero1!=6 && numero2!=6 && numero3==6) {
+        if (numero4==6  && numero5!=6 && numero6!=6 || numero4!=6 && numero5==6 && numero6!=6||numero4!=6 && numero5!=6 && numero6==6) {
             resultado="pesimo";
         }
         else{

@@ -6,12 +6,14 @@
 package ejercicioenclase2;
 import static java.lang.System.in;
 import static java.lang.System.out;
+import java.util.Scanner;
 /**
  *
  * @author kirito205
  */
 public class FormaN {
     public static int numero=0;
+    public FormaN(){}
     public FormaN(int numeros){
     numero=numeros;
     }
@@ -34,5 +36,13 @@ public class FormaN {
             out.println();
             numeroso++;
         }
-    }
+     }
+        public static void realizar(){
+            Scanner leer =new Scanner(in);
+                out.println("da el numero");
+                int NumeroForma=leer.nextInt();
+                FormaN forma=new FormaN(NumeroForma);
+                forma.forma();
+                forma.forma2();
+        }
 }

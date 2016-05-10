@@ -5,7 +5,10 @@
  */
 package ejercicioenclase2;
 
+import static java.lang.System.in;
+import static java.lang.System.out;
 import java.util.Random;
+import java.util.Scanner;
 
 /**
  *
@@ -32,5 +35,26 @@ public class MultiplicacionAleatoria {
     }
     public static String multiplicacion(){
         return ""+Numero+"*"+Numero2;
+    }
+    public static void Realizar(){
+          Scanner leer =new Scanner(in);
+         MultiplicacionAleatoria numerosos= new MultiplicacionAleatoria();
+         out.println(numerosos.multiplicacion());
+        for (int i = 0; i < 5; i++) {
+                out.println("da el numero");
+                int resultado=leer.nextInt();
+                numerosos= new MultiplicacionAleatoria(resultado);
+                boolean n=numerosos.resultadosT();
+                    if (n) {
+                        out.println("asertaste");
+                        break;
+                    }
+                    if (i==4) {
+                       out.println(" no asertaste");
+                   }
+                    else{
+                        out.println("no es");
+                    }
+                }
     }
 }
