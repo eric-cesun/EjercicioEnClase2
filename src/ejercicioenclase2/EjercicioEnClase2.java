@@ -43,17 +43,11 @@ public class EjercicioEnClase2 {
                     {
                     par++;
                     }
-                    NumerosMayores y =new NumerosMayores(numero);
-                   /* s=y.numerosN();*/
-                    
+                    NumerosMayores y =new NumerosMayores(numero);                 
                 }
                 NumerosMayores y =new NumerosMayores();
                 out.println(y.numeroF());
                 out.println(y.suma());
-               /* else
-                {
-                    out.println("ubo muchos pares");
-                }*/
                 break;
             case 3:
                 MultiplicacionAleatoria numerosos= new MultiplicacionAleatoria();

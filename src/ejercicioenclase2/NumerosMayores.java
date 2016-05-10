@@ -29,28 +29,4 @@ public class NumerosMayores {
     public static int suma(){
     return numeroSumado;
     }
-    /*public static int suma(){
-        int resultado=0;
-        for (int i = 0; i < 5; i++) {
-            resultado+=numero1[i];
-        }
-        return resultado;
-    }*/
-   /* public static int numerosN(){
-    return numero;
-    }*/
-   /* public static String numeroF(){
-        String resultados="";
-        for (int i = 0; i < 5; i++) {
-            if (i<4) {
-                resultados+= " "+numero1[i] + " + ";
-            }
-            else
-            {
-                resultados+= " "+numero1[i] + " = ";
-            }
-            
-        }
-        return resultados;
-    }*/
 }
