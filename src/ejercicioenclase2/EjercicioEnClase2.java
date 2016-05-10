@@ -83,7 +83,7 @@ public class EjercicioEnClase2 {
                 int Estoes=leer.nextInt();
                 out.println(adivina.advina(Estoes));
                 }
-                break;
+                break;  
             case 6:
                 Calculos calculo=new Calculos();
                 break;
